@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:background="@drawable/custom_bg"
+    android:id="@+id/nav_row">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_image"
+        android:layout_marginLeft="16dp"
+        app:srcCompat="@drawable/facebook"
+        android:layout_gravity="center_vertical"
+        android:scaleType="center"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="Home"
+        android:id="@+id/nav_title"
+        android:paddingLeft="16dp"
+        android:textSize="18dp"
+        android:layout_toRightOf="@+id/nav_image"
+        />
+    <TextView
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_alert"
+        android:gravity="center_vertical"
+        android:textSize="18dp"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

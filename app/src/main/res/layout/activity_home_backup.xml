@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_food"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorNhamEyHomeBG"
+    android:fitsSystemWindows="true">
+        <android.support.v4.widget.DrawerLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:id="@+id/drawer_layout">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <include
+                            android:id="@+id/toolbar"
+                            layout="@layout/toolbar_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:id="@+id/flContent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/left_drawer"
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:background="@color/colorTextPrimary">
+                        <include layout="@layout/nav_header_drawer_layout"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                                <android.support.v7.widget.RecyclerView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/nav_recycler_view"/>
+                        </RelativeLayout>
+                </LinearLayout>
+        </android.support.v4.widget.DrawerLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_each_comment"
+        android:layout_gravity="fill_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginTop="4dp"
+        card_view:contentPadding="5dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile_commented"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerVertical="true"
+
+                />
+            <TextView
+                android:id="@+id/profile_name_commented"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/img_profile_commented"
+
+            />
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/profile_name_commented"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/img_profile_commented"
+                android:id="@+id/data_commented" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

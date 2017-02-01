@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context="layout.tap_con">
+
+    <android.support.design.widget.TabLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mTabCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:tabIndicatorColor="@color/colorNhamEyPrimary"
+        app:tabIndicatorHeight="1dp">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_item_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/background_con_tap_food"/>
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_item_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/background_con_tap_location" />
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_item_comm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/background_con_tap_comm"/>
+
+    </android.support.design.widget.TabLayout>
+
+</FrameLayout>

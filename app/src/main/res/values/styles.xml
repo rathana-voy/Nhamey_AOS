@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorNhamEyPrimary</item>
+        <item name="colorPrimaryDark">@color/colorDarkPrimary</item>
+
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="AppThemeCategory" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#4CAF50</item>
+        <item name="colorPrimaryDark">#2E7D32</item>
+        <item name="colorAccent">@color/colorNhamEyRestRapple</item>
+
+    </style>
+
+    <style name="AppTheme_Dark_Dialog">
+        <item name="colorPrimary">@color/colorNhamEyPrimary</item>
+        <item name="colorPrimaryDark">@color/colorDarkPrimary</item>
+        <item name="android:background">@color/colorNhamEyPrimary</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="colorAccent">@color/colorTextW</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ReviewButton" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorNhamEyPrimary</item>
+        <item name="colorControlHighlight">@color/colorBorderSpinnerG</item>
+
+    </style>
+
+</resources>

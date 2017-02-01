@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:id="@+id/nav_header"
+    android:layout_marginBottom="16dp"
+    android:background="@color/colorNhamEyPrimary">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="70dp"
+        android:src="@drawable/menu"
+        android:id="@+id/image_profile_nav"
+        android:layout_marginLeft="16dp"
+        />
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rathana NaNa"
+            android:textSize="18dp"
+            android:textColor="@color/colorNhamEyHomePrimary"
+            android:id="@+id/tv_user_name_nav"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rathanavoy@gmail.com"
+            android:textSize="16dp"
+            android:textColor="@color/colorNhamEyHomePrimary"
+            android:id="@+id/tv_user_email_nav" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item >
+        <layer-list>
+            <item android:left="100dp"
+                android:right="100dp">
+                <bitmap android:gravity="top|center"
+                    android:src="@drawable/login_image"/>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

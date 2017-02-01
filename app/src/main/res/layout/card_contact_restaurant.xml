@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp">
+
+    <ImageView
+        android:layout_width="90dp"
+        app:srcCompat="@drawable/custom_elevation"
+        android:id="@+id/imageView_contact_rest"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="90dp"
+        android:cropToPadding="true"
+        android:layout_margin="@dimen/short_entity_margin" />
+
+    <TextView
+        android:text="TextView_contact_rest_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView_contact_rest"
+        android:id="@+id/textView_contact_rest_name"
+        android:textStyle="normal|bold"
+        android:layout_toLeftOf="@+id/imageButton_contact_call"
+        android:layout_toRightOf="@+id/imageView_contact_rest"
+        android:layout_toEndOf="@+id/imageView_contact_rest" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_contact_rest_name"
+        android:layout_toRightOf="@+id/imageView_contact_rest"
+        android:layout_toEndOf="@+id/imageView_contact_rest"
+        android:layout_toLeftOf="@+id/imageButton_contact_call"
+
+
+        android:id="@+id/textView_contact_rest_type_"
+        android:textStyle="normal|italic"
+        android:textSize="12sp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_contact_rest_type_"
+        android:layout_alignRight="@+id/textView_contact_rest_type_"
+        android:layout_alignEnd="@+id/textView_contact_rest_type_"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView_contact_rest_addr"
+        android:textSize="12sp" />
+
+    <ImageView
+        app:srcCompat="@drawable/ic_action_clock_green"
+        android:id="@+id/imageView2"
+        android:layout_alignBottom="@+id/textView_contact_rest_time"
+        android:layout_toRightOf="@+id/imageView_contact_rest"
+        android:layout_toEndOf="@+id/imageView_contact_rest"
+        android:layout_width="15dp"
+        android:layout_height="15dp" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/ic_action_call_green"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageButton_contact_call"
+        android:background="@color/transparent" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_contact_rest_time"
+        android:textSize="12sp"
+        android:layout_alignBottom="@+id/imageView_contact_rest"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_marginBottom="@dimen/short_entity_margin" />
+
+</RelativeLayout>

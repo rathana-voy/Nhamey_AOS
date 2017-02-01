@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_research_loacation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99868686"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTextW"
+        android:orientation="vertical"
+        android:padding="@dimen/short_entity_margin">
+
+        <TextView
+            android:id="@+id/popup_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/short_entity_margin"
+            android:text="LABEL MENU"
+            android:textColor="@color/colorNhamEyPrimary" />
+
+        <ListView
+            android:id="@+id/list_view_popup"
+            android:layout_width="match_parent"
+            android:layout_height="365dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/short_entity_margin"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_popup_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="box_height">35dp</dimen>
+    <dimen name="short_entity_margin">4dp</dimen>
+    <dimen name="tap_indicator_size">6dp</dimen>
+    <dimen name="tap_indicator_size_negative">-6dp</dimen>
+
+    <dimen name="label_size_01">12sp</dimen>
+    <dimen name="label_padding_above">12sp</dimen>
+    <dimen name="label_padding_below">4sp</dimen>
+
+    <dimen name="toolbar_size_toolbar_2x">115dp</dimen>
+    <dimen name="toolbar_size_tap">48dp</dimen>
+    <dimen name="toolbar_size_edit">60dp</dimen>
+    <dimen name="toolbar_size_expand">240dp</dimen>
+    <dimen name="toolbar_box_padding">12dp</dimen>
+    <dimen name="toolbar_left_margin_16dp">16dp</dimen>
+
+    <integer name="gallery_columns">3</integer>
+</resources>

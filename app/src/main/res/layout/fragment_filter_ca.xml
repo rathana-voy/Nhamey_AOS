@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTextW"
+    tools:context="layout.filter_ca">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/short_entity_margin"
+        android:layout_marginLeft="@dimen/toolbar_left_margin_16dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/short_entity_margin"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/lbl_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/search_rest"
+                android:textColor="@color/colorTextB"
+                android:textSize="@dimen/label_size_01" />
+
+            <EditText
+                android:background="@drawable/background_spinner_search_ca"
+                android:id="@+id/edit_search"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/box_height"
+                android:layout_below="@id/lbl_search"
+                android:layout_weight="1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/short_entity_margin"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/lbl_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sort"
+                android:textColor="@color/colorTextB"
+                android:textSize="@dimen/label_size_01" />
+
+            <Spinner
+                android:background="@drawable/background_spinner_simple_w_ca"
+                android:id="@+id/spinner_filter"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/box_height"
+                android:layout_below="@id/lbl_filter"
+                android:layout_weight="1" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

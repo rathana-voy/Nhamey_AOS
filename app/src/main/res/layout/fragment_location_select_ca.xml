@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:animateLayoutChanges="true"
+        android:id="@+id/mFrameLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/short_entity_margin"
+        android:paddingLeft="@dimen/toolbar_left_margin_16dp"
+        android:orientation="horizontal"
+        android:background="@color/colorNhamEyPrimary"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/short_entity_margin"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/lbl_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textColor="@color/colorTextW"
+                android:textSize="@dimen/label_size_01" />
+
+            <Spinner
+                android:id="@+id/spinner_location"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/box_height"
+                android:layout_below="@id/lbl_location"
+                android:layout_weight="1"
+                android:background="@drawable/background_spinner_location_ca"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/short_entity_margin"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/lbl_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/category"
+                android:textColor="@color/colorTextW"
+                android:textSize="@dimen/label_size_01" />
+
+            <Spinner
+                android:background="@drawable/background_spinner_simple_b_ca"
+                android:id="@+id/spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/box_height"
+                android:layout_below="@id/lbl_category"
+                android:layout_weight="1" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

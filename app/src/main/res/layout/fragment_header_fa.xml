@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.header_fa">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/toolbar_left_margin_16dp"
+            android:background="@color/colorTransparent"
+            android:src="@drawable/ic_action_home" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/short_entity_margin"
+            android:background="@color/colorTransparent"
+            android:src="@drawable/ic_action_favorite_fa" />
+        <TextView
+            android:id="@+id/header_title"
+            style="@android:style/Widget.DeviceDefault.Light.TextView"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="left|center_vertical|clip_vertical"
+            android:text="CATEGORY"
+            android:textColor="@color/colorTextW"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</FrameLayout>
